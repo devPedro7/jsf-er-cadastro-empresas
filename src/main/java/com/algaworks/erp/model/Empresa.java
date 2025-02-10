@@ -55,6 +55,7 @@ public class Empresa implements Serializable {
 		return "Empresa [id=" + id + "]";
 	}
 
+
 	@Override
 	public int hashCode() {
 		return Objects.hash(id);
@@ -118,6 +119,14 @@ public class Empresa implements Serializable {
 
 	public void setRamoAtividade(RamoAtividade ramoAtividade) {
 		this.ramoAtividade = ramoAtividade;
+	}
+	
+	public TipoEmpresa getTipo() {
+		return tipo;
+	}
+
+	public void setTipo(TipoEmpresa tipo) {
+		this.tipo = tipo;
 	}
 	
 }
